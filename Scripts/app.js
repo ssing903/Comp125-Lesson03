@@ -23,20 +23,30 @@
   // var paragraphs = new Array();
 
    //check to see i paragrapgh one exits
-   if(paragraphOne)
+
+   for(var index=0;index<paragraphElements.length;index++)
+   {
+      if(paragraphElements[index])
+      {
+        paragraphElements[index].textContent = paragraphs[index];
+      }
+   }
+   /*
+   if(paragraphElements[0])
    {
      //console.log("Paragraph One exist")
-     paragraphOne.textContent = paragraphs[0];
+     paragraphElements[0].textContent = paragraphs[0];
    }
-   if(paragraphTwo)
+   if(paragraphElements[1])
    {
      // console.log("Paragraph Two exist")
-     paragraphTwo.textContent = paragraphs[1];     
+     paragraphElements[1].textContent = paragraphs[1];     
    }
 
-   if(paragraphThree)
+   if(paragraphElements[2])
    {
      //console.log("Paragraph Three exist")
-     paragraphThree.textContent = paragraphs[2];     
+     paragraphElements[2].textContent = paragraphs[2];     
    }
+   */
 })();
